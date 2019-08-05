@@ -1,4 +1,0 @@
-Git Commit test.
-First commit by shell.
-append some more infomation.
-this will be the second commit.
