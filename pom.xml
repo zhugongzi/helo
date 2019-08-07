@@ -17,13 +17,20 @@
             <version>2.3</version>
         </dependency>
 
-
+        <!-- https://mvnrepository.com/artifact/org.apache.el/com.springsource.org.apache.el -->
         <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
-            <version>3.0.0</version>
+            <groupId>org.apache.el</groupId>
+            <artifactId>com.springsource.org.apache.el</artifactId>
+            <version>7.0.12</version>
         </dependency>
 
+
+        <!-- https://mvnrepository.com/artifact/org.mortbay.jasper/apache-el -->
+        <dependency>
+            <groupId>org.mortbay.jasper</groupId>
+            <artifactId>apache-el</artifactId>
+            <version>8.5.40</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
         <dependency>
@@ -45,7 +52,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>springBootJolokia.EvilRMIServer</mainClass>
+                            <mainClass>main.springBootJolokia.EvilRMIServer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -61,6 +68,14 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

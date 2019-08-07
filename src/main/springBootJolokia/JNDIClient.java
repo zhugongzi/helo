@@ -1,4 +1,4 @@
-package springBootJolokia;
+package main.springBootJolokia;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
