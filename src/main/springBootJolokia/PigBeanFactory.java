@@ -1,4 +1,4 @@
-package main.springBootJolokia;
+package springBootJolokia;
 
 import org.apache.naming.ResourceRef;
 import org.apache.naming.factory.Constants;

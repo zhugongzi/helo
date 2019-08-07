@@ -44,7 +44,7 @@
 
 
     <build>
-        <sourceDirectory>src</sourceDirectory>
+        <sourceDirectory>src/main</sourceDirectory>
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -52,7 +52,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>main.springBootJolokia.EvilRMIServer</mainClass>
+                            <mainClass>springBootJolokia.EvilRMIServer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
