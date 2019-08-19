@@ -7,7 +7,7 @@ import javax.naming.InitialContext;
 
 public class JNDIClient {
     public static void main(String[] args) throws Exception {
-        String uri = "rmi://149.28.73.237:1389/Object";
+        String uri = "rmi://127.0.0.1:1389/Object";
         Context ctx = new InitialContext();
         ctx.lookup(uri);
     }
